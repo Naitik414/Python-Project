@@ -1,7 +1,9 @@
 #Tic-Tac-Toe Game
 
 Name : Naitik Sahu
+
 Section : M Section (SA-16)
+
 ERP No. : RU-26-00824
 
 A simple two-player Tic-Tac-Toe game built using Python. Players take turns placing X and O on a 3x3 board.
