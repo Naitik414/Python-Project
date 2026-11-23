@@ -1,5 +1,5 @@
                              #Python Project
-WRITING_LINES = [
+WINNING_LINES = [
     (0,1,2),
     (3,4,5),
     (6,7,8),
@@ -18,7 +18,7 @@ for row in range(3):
     for col in range(3):
         value = board[row * 3 + col]
         cells.append(value if value != "" else str(row * 3 + col +1))
-        print(" "+"/".join(cells))
+        print(" | ".join(cells))
         if row < 2:
             print("---+----+---")
     print()
@@ -26,7 +26,7 @@ for row in range(3):
 def check_winner(board):
     "check if a player has won the game."
 
-    for line in WRITING_LINES:
+    for line in WINNING_LINES:
         a, b, c = line
         if board[a] != "" and board[a] == board[b] == board[c]:
             winning_line = "-". join(str(index + 1) for index in line)
@@ -80,7 +80,7 @@ while move_count < 9:
         print("it's a draw! No moves left.")
     break
 
-player = "0" if current_player == "X" else "X"
+current_player = "0" if current_player == "X" else "X"
 
 
 def main():
