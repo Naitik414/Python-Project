@@ -2,8 +2,8 @@
 
 **Name: Naitik Sahu 
 
-**Class:
-**Roll Number:** <Your Roll Number>
+**Class: SA-16
+**ERP No. : RU-26-00824
 
 ## Project Overview
 
@@ -11,7 +11,7 @@ A two-player console Tic-Tac-Toe game in Python 3 on a 3 × 3 board. Players tak
 
 ## Difficulties and Solutions
 - **Positions 1-9 vs list indexes 0-8:** converted with `board[pos - 1]`.
-- **Invalid input (`abc`, `10`) crashing the game:** checked `isdigit()` and the 1-9 range before converting.
+- **Invalid input crashing the game:** checked `isdigit()` and the 1-9 range before converting.
 - **Turn changing after a wrong or taken move:** put the input check in a loop so the turn only changes after a valid move.
 - **Eight separate win checks:** stored the lines in a `WINNING_LINES` list and looped over them.
 - **Win on the 9th move reported as a draw:** check for a win first, then for a full board.
