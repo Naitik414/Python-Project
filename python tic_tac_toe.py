@@ -1,13 +1,13 @@
                              #Python Project
 WINNING_LINES = [
-    (0,1,2),
-    (3,4,5),
-    (6,7,8),
-    (0,3,6),
-    (1,4,7),
-    (2,5,8),
-    (0,4,8),
-    (2,4,6),
+    (0,1,2), #FIRST ROW
+    (3,4,5), #SECOND ROW
+    (6,7,8), #THIRD ROW
+    (0,3,6), #FIRST COLUMN
+    (1,4,7), #SECOND COLUMN
+    (2,5,8), #THIRD COLUMN
+    (0,4,8), #FIRST DIAGONAL
+    (2,4,6), #SECOND DIAGONAL
 ]
 
 def display_board(board):
